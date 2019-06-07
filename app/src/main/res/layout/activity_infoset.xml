@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/infoSetView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="회원 정보 변경"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textColor="#3b5998"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/btn_image_set"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/default_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewMyId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="아이디"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editText_newPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="신규암호"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_newName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="신규이름"
+            android:layout_marginBottom="30dp"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/sp_infoset"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="#3b5998"
+            android:text="변 경"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>
